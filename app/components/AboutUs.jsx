@@ -12,23 +12,23 @@ const AboutUs = () => {
         Strategic <br />
         Vision
       </middle>
-      <bottom className="flex  flex-col md:flex-row">
-        <leftSection className=" flex-1 md:w-1/2">
+      <bottom className="grid grid-cols-1 md:grid-cols-2">
+        <leftSection className=" w-full ">
           <Image
             src={aboutUsImg}
             alt="Icon"
             // width={40}
             // height={40}
             // sizes="100vw"
-            className="rounded-3xl"
+            className="rounded-3xl w-full"
           />
         </leftSection>
-        <rightSection className=" md:w-1/2 flex flex-col items-center  pl-9">
-          <div className="text-center">
-            <h2 className="text-red-500 text-2xl font-bold font-customTextFont pt-6 ">
-              Crafting Brilliance Together
+        <rightSection className=" flex flex-col items-center  md:pl-9">
+          <div className=" mx-auto">
+            <h2 className="text-red-500 text-[1rem] text-xl font-bold font-customTextFont pt-6 ">
+              CRAFTING BRILLIANCE TOGETHER
             </h2>
-            <div className="p-6 flex  space-x-2">
+            <div className="flex flex-row py-4  max-w-full  space-x-2">
               <CustomButton text="Innovate" />
               <CustomButton text="Create" />
               <CustomButton text="Elevate" />
@@ -36,7 +36,7 @@ const AboutUs = () => {
               <CustomButton text="Imagination" />
             </div>
             <div
-              className=" text-customTextColor2 font-customTextFont text-left text-2xl
+              className=" text-customTextColor2 font-customTextFont text-left text-[.9rem] w-[75%]
 
 "
             >

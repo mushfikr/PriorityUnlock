@@ -1,16 +1,19 @@
+import CreditcardIcon from "@/public/assets/icons/CreditcardIcon";
+import KeyIcon from "@/public/assets/icons/KeyIcon";
+import SheildIcon from "@/public/assets/icons/SheildIcon";
 import Image from "next/image";
 import React from "react";
 
 const Policy = () => {
   return (
-    <div className="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center">
+    <div className="bg-white p-8 rounded-3xl shadow-lg flex flex-col items-center justify-around mt-16">
       {/* Title Section */}
       <div className="text-center mb-8">
         <h2 className="text-3xl font-bold">
-          We Care About Your{" "}
-          <span className="text-red-500">Data, Privacy, and Security</span>
+          WE CARE ABOUT YOUR{" "}
+          <span className="text-red-500">DATA, PRIVACY, AND SECURITY</span>
         </h2>
-        <p className="text-gray-600 mt-2">
+        <p className="text-gray-600 mt-2 max-w-[60%] mx-auto mt-4 font-customtTextFont">
           At Priority Unlock, we prioritize your trust by ensuring the highest
           standards of data protection, privacy, and security. Here’s how we
           safeguard your information:
@@ -21,10 +24,12 @@ const Policy = () => {
       <div className="flex flex-col md:flex-row w-full items-center justify-center gap-8">
         {/* Left Section (Image) */}
         <div className="flex-1">
-          <img
+          <Image
             src="/assets/policy.png"
-            alt="Data Security"
-            className="rounded-2xl shadow-lg"
+            alt="Helping hands"
+            width={500}
+            height={400}
+            className="rounded-lg"
           />
         </div>
 
@@ -34,13 +39,14 @@ const Policy = () => {
           <div className="flex items-start gap-4">
             <div className="bg-customBtnColor2 text-white p-4 rounded-full">
               {/* <i className="fa fa-lock"></i> */}
-              <Image
+              {/* <Image
                 src="/assets/encrypt.png"
                 alt="Check"
                 className="  "
                 width={50}
                 height={40}
-              />
+              /> */}
+              <KeyIcon />
             </div>
             <div>
               <h3 className="font-bold text-lg">Advanced Data Encryption</h3>
@@ -56,13 +62,14 @@ const Policy = () => {
           <div className="flex items-start gap-4">
             <div className="bg-customBtnColor2 text-white p-4 rounded-full">
               {/* <i className="fa fa-lock"></i> */}
-              <Image
+              {/* <Image
                 src="/assets/encrypt.png"
                 alt="Check"
                 className="  "
                 width={50}
                 height={40}
-              />
+              /> */}
+              <SheildIcon />
             </div>
             <div>
               <h3 className="font-bold text-lg">Strict Privacy Policies</h3>
@@ -79,13 +86,14 @@ const Policy = () => {
           <div className="flex items-start gap-4">
             <div className="bg-customBtnColor2 text-white p-4 rounded-full">
               {/* <i className="fa fa-lock"></i> */}
-              <Image
+              {/* <Image
                 src="/assets/encrypt.png"
                 alt="Check"
                 className="  "
                 width={50}
                 height={40}
-              />
+              /> */}
+              <CreditcardIcon />
             </div>
             <div>
               <h3 className="font-bold text-lg">Secure Transactions</h3>
@@ -102,20 +110,20 @@ const Policy = () => {
 
       {/* Stats Section */}
       <div className="flex flex-wrap justify-around mt-8 w-full">
-        <div className="text-center">
-          <h3 className="text-3xl font-bold">20</h3>
+        <div className="text-center font-customTextFont ">
+          <h3 className="text-5xl font-bold text-customNumColor pb-6">20</h3>
           <p className="text-gray-600">Year Experience</p>
         </div>
         <div className="text-center">
-          <h3 className="text-3xl font-bold">296</h3>
+          <h3 className="text-5xl font-bold text-customNumColor pb-6">296</h3>
           <p className="text-gray-600">Business</p>
         </div>
         <div className="text-center">
-          <h3 className="text-3xl font-bold">36</h3>
+          <h3 className="text-5xl font-bold text-customNumColor pb-6">36</h3>
           <p className="text-gray-600">Expert</p>
         </div>
         <div className="text-center">
-          <h3 className="text-3xl font-bold">106K+</h3>
+          <h3 className="text-5xl font-bold text-customNumColor pb-6">106K+</h3>
           <p className="text-gray-600">Happy Client</p>
         </div>
       </div>

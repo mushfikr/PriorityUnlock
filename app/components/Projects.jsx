@@ -49,7 +49,7 @@ const RecentProjects = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center py-16">
+    <div className="flex flex-col items-center py-16 ">
       {/* Title Section */}
       <h2 className="text-4xl font-bold mb-8">
         <span className="text-red-500">Recent</span> Project

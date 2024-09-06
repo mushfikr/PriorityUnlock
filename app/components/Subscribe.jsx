@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Subscribe = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between p-8 bg-white rounded-lg shadow-lg">
+    <div className="flex flex-col md:flex-row items-center justify-between p-8 bg-white rounded-lg shadow-lg pt-[4rem]">
       {/* Text Section */}
       <div className="md:w-1/2 text-center md:text-left">
         <h3 className="text-sm text-red-500 font-semibold mb-2">

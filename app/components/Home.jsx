@@ -12,6 +12,9 @@ import PricingPlan from "./PricingPlan";
 import Testimonials from "./Testimonials";
 import Subscribe from "./Subscribe";
 import Test from "./Test";
+import ProjectsTwo from "./ProjectsTwo";
+import CardService from "./CardService";
+import Arrowicon from "@/public/assets/Arrowicon";
 
 const Home = () => {
   return (
@@ -20,17 +23,17 @@ const Home = () => {
         {/* Left Section */}
         <div className="heroLeft md:w-1/2 p-6 gap-6 flex flex-col">
           {/* Top Part */}
-          <div className="heroLeftTop mb-6 font-customTextFont">
-            <h1 className="">
+          <div className="heroLeftTop mb-6 ">
+            <h1 className="font-customTextFont">
               Your <span className="highlight">Gateway </span> to{" "}
               <span className="highlight">Unrestricted </span> Mobile Freedom
             </h1>
           </div>
 
           {/* Middle Part */}
-          <div className="flex gap-4 mb-6">
-            <button className=" ststusButton p-3 flex gap-2 items-center">
-              check order status <img src="/assets/arrowIcon.png" />
+          <div className="flex gap-4 mb-6 mx-auto">
+            <button className=" ststusButton px-3 py-2 flex gap-2 items-center">
+              check order status <Arrowicon />
             </button>
             <div className="clientsButton font-customTextFont flex items-center gap-2 pr-4 pl-2">
               <text className="font-customTextFont">10k+ clients</text>
@@ -54,13 +57,13 @@ const Home = () => {
 
           {/* Bottom Part */}
 
-          <div className="flex gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-3 md:gap-x-3 gap-3">
             <Card
-              imageSrc="/assets/cardImage1.png" // Replace with your background image path
+              imageSrc="/assets/cardImage1.jpg" // Replace with your background image path
               title="use your unlocked phone with any network"
             />
             <Card
-              imageSrc="/assets/cardImage2.png" // Replace with your background image path
+              imageSrc="/assets/cardImage2.jpg" // Replace with your background image path
               title="use your unlocked phone with any network"
             />
           </div>
@@ -76,8 +79,10 @@ const Home = () => {
       </div>
       <div>
         <Services />
+        {/* <CardService /> */}
         <Policy />
-        <RecentProjects />
+        {/* <RecentProjects /> */}
+        <ProjectsTwo />
         <PricingPlan />
         {/* <Testimonials /> */}
         <Subscribe />

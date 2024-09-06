@@ -39,3 +39,22 @@ body {
 .clip-path-custom {
   clip-path: polygon(0 0, 100% 15%, 100% 100%, 0% 100%);
 }
+
+/* repeatedly used style aggregate */
+.desc-text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.title-text {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}

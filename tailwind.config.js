@@ -16,10 +16,13 @@ module.exports = {
         customBgColor: "#fbfbfb", // Custom background color
         customBgColor2: "#F6F6F6",
         customBorderColor: "#e3e3e3",
+        customInputColor: "#555770",
+        customTextColor4: "#868585",
 
         customTextColor1: "#202020", // Custom text color
         customTextColor2: "#434343",
         customTextColor3: "#6C6C6C",
+        customNumColor: "#2D2E30",
       },
       fontFamily: {
         customTextFont: ["Poppins", "sans-serif"], // Custom font for body text
